@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Pada CSS</title>
+    <style>
+        #box1 {
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            position: relative;
+            left: 200px;
+        }
+        #box2 {
+            height: 100px;
+            width: 100px;
+            background-color: #f1f1f1;
+            position: absolute;
+            top: 200px;
+            left: 200px;
+        }
+        #box3 {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(251, 255, 0);
+            position: fixed;
+            left: 100px;
+        }
+        #box4 {
+            height: 10000px;
+            width: 100px;
+            background-color: hsl(127, 100%, 50%);
+        }
+    </style>
+</head>
+
+<!-- ada 3 aturan pada position css, yaitu relativ absolute dan fixed
+relative, tidak mempengaruhi element lain namun berpindah saat discroll
+absolute, mempengaruhi element lain dan berpindah saat discroll
+fixed, mempengaruhi element lain tapi tidak berpindah saat discroll-->
+<body>
+    <content>
+        <div id="box1">relative</div>
+        <div id="box2">absolute</div>
+        <div id="box3">fixed</div>
+
+        <div id="box4"></div>
+        </content>
+</body>
+</html>

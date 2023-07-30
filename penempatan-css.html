@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macam Macam Penempatan CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #internal-css{
+            background-color: black;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- skala prioritas css adalah inline > internal > external
+    inline hanya diaplikasian pada element
+    internal hanya diaplikasikan pada 1 page/halaman
+    external dapat diaplikasikan pada banyak halaman dengan syarat
+    file css tersebut dipanggil-->
+
+
+    <h1>Belajar CSS</h1>
+    <!-- untuk inline css, yaitu style css yang diletakan pada tag
+    langsung-->
+    <P style="border: 1px solid black; text-align: center; border-radius: 20px;">
+        Ini adalah contoh css inline </P>
+        
+    <!-- untuk internal css, yaitu style css yang diletakan pada bagian
+    head dengan menggunakan tag <style> dapat menggunakan id untuk memanggil
+    tag tertentu secara spesifik -->
+    <p id="internal-css"> Ini adalah contoh css Internal</p>
+
+    <!-- untuk external css, yaitu style css yang diletak pada file berbeda
+    dengan format "nama-file.css" lalu css akan dipanggil penggunakan id atau tag
+    dan membutuhkan tag <link rel="stylesheet" href=""> -->
+    <p id="external-css"> Ini adalah contoh css external</p>
+
+</body>
+</html>

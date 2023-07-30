@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector Pada CSS</title>
+    <style>
+        main{
+            background-color: rgb(55, 53, 50);
+        }
+        p{
+            color: red;
+        }
+        .paragraph{
+            color: aqua;
+            background-color: black;
+        }
+        #selektor-id{
+            color: white;
+            background-color: gray;
+        }
+        .p1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+    <h2>Macam macam Selector</h2>
+
+    <!-- untuk mengaplikasikan css pada element langsung saja gunakan
+    elemnt{} pada style-->
+    <p>Ini adalah selector Element</p>
+
+    <!-- untuk mengaplikasikan css dengan class gunakan
+    .nama-class{} class dapat diberikan lebih dari 1 value-->
+    <p class="paragraph p1">Ini adalah selector Class</p>
+
+    <!-- untuk aplikasikan css pada id tertentu gunakan
+    #nama-id{} berbeda dengan class id tidak dapat memiliki lebih
+    dari 1 value karena bersifat spesifik -->
+    <p class="paragraph p2" id="selektor-id">Ini adalah selector ID</p>
+    </main>
+
+</body>
+</html>
